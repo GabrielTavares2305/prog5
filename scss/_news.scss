@@ -1,0 +1,30 @@
+.news{
+    background-color: $primary-light;
+  
+    input{
+        width: 100%;
+        height: 30px;
+        margin-top: 63px;
+        margin-bottom: 63px;
+        box-sizing: border-box; //sempre colocar 
+    }
+
+    button{
+        margin-top: 63px;
+        margin-bottom: 63px; 
+    }
+}
+
+@media (max-width: 1199px){
+
+    .news{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .row{
+        flex-direction: column;
+        column-gap: 13px;
+        box-sizing: border-box;
+    }
+}

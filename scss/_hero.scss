@@ -1,0 +1,111 @@
+.hero{
+    background-color: $primary-dark;
+    padding-top: 30px;
+    padding-bottom: 110px;
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu{
+        
+        display: flex;
+        column-gap: 71px;
+
+
+        a{
+            font-family: 'Playfair Display', serif; ;
+            color: white;
+            text-decoration: none;
+
+            &:hover{
+                color: $primary-light;
+            }
+        }
+    }
+
+
+    @media (max-width: 1199px){
+      
+      img{
+        height: 70px;
+      }
+      
+      .menu{
+        //display: none;
+        transform: translateX(100%);
+        position: absolute;
+        left: 0;
+        top: 132px;
+        background-color: $primary;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        height: 100vh;
+        z-index: 1000;
+      }
+
+      .bar{
+        width: 40px;
+        height: 3px;
+        margin-bottom: 3px;
+        background-color: white;
+      }
+
+      a{
+        padding: 15px 0;
+        color: $primary-dark;
+        border-bottom: 1px solid $primary-dark;
+      }
+    }
+
+
+    .content{
+        margin-top: 110px;
+        align-items: center;
+
+        h1{
+          color: white;
+          font-size: 60px;
+        }
+
+        p{
+           color: white;
+           font-size: 16px; 
+        }
+
+        a{
+          display: inline-block;
+          background-color: $primary-light;
+          color: $primary-dark;
+          font-family: 'Playfair Display', serif;
+          text-decoration: none;
+          padding: 15px 50px;
+          
+          &:hover{
+            background-color: $primary;
+            color: $gray-light;
+          }
+        }
+
+        @media (max-width: 1199px){
+          text-align: center;
+
+          h1{
+            font-size: 2rem;
+          }
+
+          p{
+            max-width: 100%;
+          }
+
+          img{
+            max-width: 265px;
+          }
+        }
+    }
+}
